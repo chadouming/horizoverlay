@@ -95,25 +95,90 @@
 .row.self .damage-percent-fg {
   background: rgba(255, 255, 255, 1);
 }
-/*
-.row.job-dps .dps.irrelevant {
-  background: rgba(244, 67, 54, 0.1);
+
+.row.job-dps.Blu .data-items:before {
+    background: rgba(36, 89, 255, 0.7);
 }
-.row.job-tank .dps.irrelevant {
-  background: rgba(33, 150, 243, 0.1);
+
+.row.job-tank.Gnb .data-items:before {
+    background: rgba(121, 109, 48, 0.7);
 }
-.row.job-healer .dps.irrelevant {
-  background: rgba(139, 195, 74, 0.1);
+
+.row.job-dps.Dnc .data-items:before {
+    background: rgba(242, 192, 191, 0.7);
 }
-.row.self div.dps.irrelevant {
-  background: rgba(255, 255, 255, 0.5);
+
+.row.job-dps.Sam .data-items:before {
+    background: rgba(228, 109, 4, 0.7);
 }
-.row .dps.irrelevant {
-  background: rgba(0, 0, 0, 0.1);
+
+.row.job-dps.Rdm .data-items:before {
+    background: rgba(232, 123, 123, 0.7);
 }
-    */
+
+.row.job-healer.Ast .data-items:before {
+    background: rgba(255, 231, 74, 0.7);
+}
+
+.row.job-healer.Sch .data-items:before {
+    background: rgba(134, 87, 255, 0.7);
+}
+
+.row.job-dps.Mch .data-items:before {
+    background: rgba(110, 225, 214, 0.7);
+}
+
+.row.job-tank.Drk .data-items:before {
+    background: rgba(209, 38, 204, 0.7);
+}
+
+.row.job-tank.Gla .data-items:before,
+.row.job-tank.Pld .data-items:before {
+    background: rgba(168, 210, 230, 0.7);
+}
+
+.row.job-dps.Acn .data-items:before,
+.row.job-dps.Smn .data-items:before {
+    background: rgba(45, 155, 120, 0.7);
+}
+
+.row.job-tank.Mar .data-items:before,
+.row.job-tank.War .data-items:before {
+    background: rgba(207, 38, 33, 0.7);
+}
+
+.row.job-dps.Thm .data-items:before,
+.row.job-dps.Blm .data-items:before {
+    background: rgba(165, 121, 214, 0.7);
+}
+
+.row.job-dps.Pgl .data-items:before,
+.row.job-dps.Mnk .data-items:before {
+    background: rgba(214, 156, 0, 0.7);
+}
+
+.row.job-dps.Lnc .data-items:before,
+.row.job-dps.Drg .data-items:before {
+    background: rgba(65, 100, 205, 0.7);
+}
+
+.row.job-dps.Rog .data-items:before,
+.row.job-dps.Nin .data-items:before {
+    background: rgba(175, 25, 100, 0.7);
+}
+
+.row.job-dps.Arc .data-items:before,
+.row.job-dps.Brd .data-items:before {
+    background: rgba(145, 186, 94, 0.7);
+}
+
+.row.job-healer.Cnj .data-items:before,
+.row.job-healer.Whm .data-items:before {
+    background: rgba(255, 240, 220, 0.7);
+}
+
 .row .damage-percent-bg {
-  height: 2px;
+  height: 4px;
   background: rgba(0, 0, 0, 0.3);
   transform: skew(-30deg);
   position: relative;
@@ -128,11 +193,13 @@
 }
 .row .damage-percent {
   position: relative;
+  float: left;
   text-align: right;
-  width: 100%;
-  font-size: 7px;
-  top: -2px;
-  right: 10px;
+  width: 25%;
+  font-size: 10px;
+  top: 0px;
+  left: -17px;
+  padding-left: 0px;
 }
 
 .row .dps {
@@ -167,11 +234,11 @@
 }
 
 .job {
-  width: 20px;
+  width: 25px;
   position: absolute;
-  top: -5px;
-  left: 59px;
-  z-index: 1;
+  top: -1px;
+  left: 55px;
+  z-index: 1; 
 }
 .name {
   white-space: nowrap;

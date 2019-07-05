@@ -96,6 +96,9 @@ function SetupModeRaw(props) {
                           style={{ width: `${mock.damagePct}px` }}
                         />
                       </div>
+                      <div className="ch-percent">{mock.critPct}%</div>
+                      <div className="dh-percent">{mock.directHitPct}%</div>
+                      <div className="cdh-percent">{mock.critDirectHitPct}%</div>
                       <div className="damage-percent">{mock.damagePct}%</div>
                     </div>
                   ) : null}

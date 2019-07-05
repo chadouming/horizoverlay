@@ -3,7 +3,7 @@ import { shape, bool, string, object } from 'prop-types'
 
 export const defaultConfig = {
   showSetup: false,
-  color: 'byRole',
+  color: 'byJob',
   characterName: 'YOU',
   showRank: true,
   showJobIcon: true,

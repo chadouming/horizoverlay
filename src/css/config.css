@@ -174,3 +174,7 @@ legend {
   width: 3em;
   height: 2em;
 }
+div.radiobutton {
+  text-align: left;
+  padding-left: 10%;
+}

@@ -31,22 +31,23 @@ export default class CombatantHorizontal extends Component {
     const order = this.props.rank
     const jobName = data.Job || 'WHO?'
     const name = data.name.toLowerCase()
-    let jobStyleClass, jobIcon, damageWidth
+    let jobStyleClass, jobIcon, damageWidth, critPct
 
     // don't need to render this component if this is a limit break
     if (!data.Job && name === 'limit break') return null
 
     // Color theme byRole
-    if (config.color === 'byRole') {
+    if (config.color === 'byRole' || config.color === 'byJob') {
       for (const role in jobRoles) {
         if (jobRoles[role].indexOf(data.Job.toLowerCase()) >= 0)
-          jobStyleClass = ` job-${role}`
+          jobStyleClass = `job-${role}`
         if (data.Job === '') {
           for (const job of jobRoles[role]) {
-            if (name.indexOf(job) >= 0) jobStyleClass = ` job-${role}`
+            if (name.indexOf(job) >= 0) jobStyleClass = `job-${role}`
           }
         }
       }
+      jobStyleClass += config.color === 'byJob' ? ` ${data.Job}` : ""
     } else {
       jobStyleClass = ''
     }
@@ -54,6 +55,11 @@ export default class CombatantHorizontal extends Component {
     // Damage Percent
     damageWidth = `${parseInt(
       data.damage / this.props.encounterDamage * 100,
+      10
+   )}%`
+
+    critPct = `${parseInt(
+      data.crithits / data.hits * 100,
       10
     )}%`
 
@@ -83,7 +89,7 @@ export default class CombatantHorizontal extends Component {
     if (data.maxhit) maxhit = data.maxhit.replace('-', ': ')
     return (
       <div
-        className={`row ${data.Job}${jobStyleClass}${
+        className={`row ${jobStyleClass}${
           isSelf && config.showSelf ? ' self' : ''
         }`}
         style={{ order }}
@@ -107,21 +113,24 @@ export default class CombatantHorizontal extends Component {
           <DataText type="job" show={!config.showHps && !config.showFFLogsPCT} {...data} />
           <DataText type="dps" {...data} />
         </div>
-        <DamageBar width={damageWidth} show={config.showDamagePercent} />
+        <DamageBar width={damageWidth} show={config.showDamagePercent} crit={critPct} dhit={data.DirectHitPct} cdhit={data.CritDirectHitPct} />
         <div className="maxhit">{config.showMaxhit && maxhit}</div>
       </div>
     )
   }
 }
 
-function DamageBar({ width, show }) {
+function DamageBar({ width, show, crit, dhit, cdhit }) {
   if (!show) return null
   return (
     <div>
       <div className="damage-percent-bg">
         <div className="damage-percent-fg" style={{ width }} />
       </div>
-      <div className="damage-percent">{width}</div>
+      <div className="damage-percent">CH:<br/>{crit}</div>
+      <div className="damage-percent">DH:<br/>{dhit}</div>
+      <div className="damage-percent">CDH:<br/>{cdhit}</div>
+      <div className="damage-percent">DMG:<br/>{width}</div>
     </div>
   )
 }

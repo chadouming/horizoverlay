@@ -48,8 +48,7 @@ class ConfigRaw extends Component {
         <form onSubmit={e => this.resetConfig(e)}>
           <label
             htmlFor="showSetup"
-            className={`setup-btn${config.showSetup ? '' : ' disabled'}`}
-          >
+            className={`setup-btn${config.showSetup ? '' : ' disabled'}`}>
             <span>
               <input
                 type="checkbox"
@@ -85,7 +84,7 @@ class ConfigRaw extends Component {
               {/* Color theme */}
               {loc.themeTitle}
             </legend>
-            <div>
+            <div className="radiobutton">
               <input
                 type="radio"
                 name="color"
@@ -97,6 +96,19 @@ class ConfigRaw extends Component {
               <label htmlFor="colorByRole">
                 {/* Color By Role */}
                 {loc.themeOption1}
+              </label>
+              <br />
+              <input
+                type="radio"
+                name="color"
+                id="colorByJob"
+                value="byJob"
+                checked={config.color === 'byJob'}
+                onChange={this.handleConfig}
+              />
+              <label htmlFor="colorByJob">
+                {/* Color By Role */}
+                {loc.themeOption3}
               </label>
               <br />
               <input
