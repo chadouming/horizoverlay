@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/horizoverlay/static/css/main.ce900245.chunk.css",
-    "main.js": "/horizoverlay/static/js/main.ce7ac784.chunk.js",
-    "main.js.map": "/horizoverlay/static/js/main.ce7ac784.chunk.js.map",
+    "main.js": "/horizoverlay/static/js/main.afb3d987.chunk.js",
+    "main.js.map": "/horizoverlay/static/js/main.afb3d987.chunk.js.map",
     "runtime~main.js": "/horizoverlay/static/js/runtime~main.5766f4f7.js",
     "runtime~main.js.map": "/horizoverlay/static/js/runtime~main.5766f4f7.js.map",
-    "static/js/2.96ad3627.chunk.js": "/horizoverlay/static/js/2.96ad3627.chunk.js",
-    "static/js/2.96ad3627.chunk.js.map": "/horizoverlay/static/js/2.96ad3627.chunk.js.map",
+    "static/js/2.2e7d62af.chunk.js": "/horizoverlay/static/js/2.2e7d62af.chunk.js",
+    "static/js/2.2e7d62af.chunk.js.map": "/horizoverlay/static/js/2.2e7d62af.chunk.js.map",
     "index.html": "/horizoverlay/index.html",
-    "precache-manifest.2bc83dca4025aa85ca627a2f4b14b125.js": "/horizoverlay/precache-manifest.2bc83dca4025aa85ca627a2f4b14b125.js",
+    "precache-manifest.57af91f8c2a9f79c11628ee7662a4577.js": "/horizoverlay/precache-manifest.57af91f8c2a9f79c11628ee7662a4577.js",
     "service-worker.js": "/horizoverlay/service-worker.js",
     "static/css/main.ce900245.chunk.css.map": "/horizoverlay/static/css/main.ce900245.chunk.css.map",
     "static/media/mog.png": "/horizoverlay/static/media/mog.e1e18820.png"
