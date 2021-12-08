@@ -105,7 +105,7 @@ export default class CombatantHorizontal extends Component {
           ) : (
             ''
           )}
-          <span className="character-name">{characterName}</span>
+          <span className={`character-name ${ !isSelf && config.enableStreamerMode ? 'streamer-mode' : '' }`}>{characterName}</span>
         </div>
         <div
           className={`data-items${config.showHighlight ? ' highlight' : ''}${
