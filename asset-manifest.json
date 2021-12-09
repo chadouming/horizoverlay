@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/horizoverlay/static/css/main.ce900245.chunk.css",
-    "main.js": "/horizoverlay/static/js/main.81a346cf.chunk.js",
-    "main.js.map": "/horizoverlay/static/js/main.81a346cf.chunk.js.map",
-    "runtime~main.js": "/horizoverlay/static/js/runtime~main.5766f4f7.js",
-    "runtime~main.js.map": "/horizoverlay/static/js/runtime~main.5766f4f7.js.map",
-    "static/js/2.2e7d62af.chunk.js": "/horizoverlay/static/js/2.2e7d62af.chunk.js",
-    "static/js/2.2e7d62af.chunk.js.map": "/horizoverlay/static/js/2.2e7d62af.chunk.js.map",
+    "main.css": "/horizoverlay/static/css/main.c9beef07.chunk.css",
+    "main.js": "/horizoverlay/static/js/main.f83b7519.chunk.js",
+    "main.js.map": "/horizoverlay/static/js/main.f83b7519.chunk.js.map",
+    "runtime-main.js": "/horizoverlay/static/js/runtime-main.9a241b58.js",
+    "runtime-main.js.map": "/horizoverlay/static/js/runtime-main.9a241b58.js.map",
+    "static/js/2.7d4f1655.chunk.js": "/horizoverlay/static/js/2.7d4f1655.chunk.js",
+    "static/js/2.7d4f1655.chunk.js.map": "/horizoverlay/static/js/2.7d4f1655.chunk.js.map",
     "index.html": "/horizoverlay/index.html",
-    "precache-manifest.e6a8c0911c2fb6b87f6839ce027d0886.js": "/horizoverlay/precache-manifest.e6a8c0911c2fb6b87f6839ce027d0886.js",
+    "precache-manifest.a9b9a16f7bee0629dae8fbdc18efbd85.js": "/horizoverlay/precache-manifest.a9b9a16f7bee0629dae8fbdc18efbd85.js",
     "service-worker.js": "/horizoverlay/service-worker.js",
-    "static/css/main.ce900245.chunk.css.map": "/horizoverlay/static/css/main.ce900245.chunk.css.map",
-    "static/media/mog.png": "/horizoverlay/static/media/mog.e1e18820.png"
-  }
+    "static/css/main.c9beef07.chunk.css.map": "/horizoverlay/static/css/main.c9beef07.chunk.css.map",
+    "static/js/2.7d4f1655.chunk.js.LICENSE.txt": "/horizoverlay/static/js/2.7d4f1655.chunk.js.LICENSE.txt",
+    "static/media/mog.png": "/horizoverlay/static/media/mog.e1e18820.png",
+    "static/media/rpr.png": "/horizoverlay/static/media/rpr.fda2c25c.png",
+    "static/media/sge.png": "/horizoverlay/static/media/sge.750eccca.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a241b58.js",
+    "static/js/2.7d4f1655.chunk.js",
+    "static/css/main.c9beef07.chunk.css",
+    "static/js/main.f83b7519.chunk.js"
+  ]
 }
